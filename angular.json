@@ -30,7 +30,8 @@
                 "glob": "**/*",
                 "input": "node_modules/leaflet/dist/images/",
                 "output": "./assets"
-              }
+              },
+              "src/manifest.webmanifest"
             ],
             "styles": ["src/styles.scss"],
             "stylePreprocessorOptions": {
@@ -57,15 +58,17 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "20mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "20kb",
+                  "maximumError": "30kb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json"
             }
           }
         },
@@ -100,7 +103,8 @@
                 "glob": "**/*",
                 "input": "node_modules/leaflet/dist/images/",
                 "output": "./assets"
-              }
+              },
+              "src/manifest.webmanifest"
             ],
             "styles": ["src/styles.scss"],
             "stylePreprocessorOptions": {

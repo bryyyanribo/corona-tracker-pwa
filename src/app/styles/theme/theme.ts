@@ -20,12 +20,6 @@ export const light: Theme = {
     '--primary-default': '#5DFDCB',
     '--primary-dark': '#000',
     '--primary-light': '#B2FFE7',
-
-    '--error-default': '#EF3E36',
-    '--error-dark': '#800600',
-    '--error-light': '#FFCECC',
-
-    '--background-tertiary-shadow': '0 1px 3px 0 rgba(92, 125, 153, 0.5)',
   },
 };
 
@@ -45,12 +39,6 @@ export const dark: Theme = {
 
     '--primary-default': '#5DFDCB',
     '--primary-dark': '#fff',
-    '--primary-light': '#B2FFE7',
-
-    '--error-default': '#EF3E36',
-    '--error-dark': '#800600',
-    '--error-light': '#FFCECC',
-
-    '--background-tertiary-shadow': '0 1px 3px 0 rgba(8, 9, 10, 0.5)',
+    '--primary-light': '#B2FFE7'
   },
 };
