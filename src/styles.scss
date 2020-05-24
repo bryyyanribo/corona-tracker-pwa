@@ -1,0 +1,39 @@
+@use '@material/theme'with ($primary: red,
+  $secondary: #faab1a,
+  $background: #fff,
+);
+
+@use '@angular-mdc/theme/material';
+@use '@material/typography/mdc-typography';
+@use '@material/switch/mdc-switch';
+@use '@material/switch/_index.scss';
+@import "~leaflet/dist/leaflet.css";
+@import "./app/styles/_media-queries.scss";
+@import "./app/styles/_variables.scss";
+
+
+body {
+  background: var(--background-default);
+}
+
+* {
+  font-family: $font-family;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+
+.corona {
+  &__dashboard {
+    height: 91vh;
+    margin-top: $large-size !important;
+  }
+
+  &__cards {
+    margin-top: $small-size !important;
+  }
+}

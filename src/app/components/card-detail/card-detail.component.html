@@ -1,0 +1,16 @@
+<div *ngIf="cardData" [@cardAnimation]="cardData.length">
+  <div class="corona" *ngFor="let corona of cardData | keyvalue">
+    <mdc-card class="corona__card">
+      <mdc-card-primary-action>
+        <div class="corona__container">
+          <h3 class="corona__title" mdcSubtitle2>
+            {{ corona.key | uppercase }}
+          </h3>
+          <h2 class="corona__value" mdcHeadline4>
+            {{ corona.value | number:'2.' }}
+          </h2>
+        </div>
+      </mdc-card-primary-action>
+    </mdc-card>
+  </div>
+</div>

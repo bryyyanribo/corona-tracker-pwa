@@ -1,0 +1,21 @@
+<ng-container>
+  <corona-app-bar></corona-app-bar>
+
+  <div class="corona__dashboard mdc-layout-grid">
+    <div class="corona__dashboard-container mdc-layout-grid__inner">
+      <div
+        class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-3-desktop">
+        <div
+          class="corona__cards mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-3-tablet mdc-layout-grid__cell--span-3-desktop">
+          <corona-card [cardData]="cardData"> </corona-card>
+        </div>
+      </div>
+
+      <div
+        class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-5-tablet mdc-layout-grid__cell--span-9-desktop">
+        <corona-leaflet *ngIf="countryData" [countries]="countryData">
+        </corona-leaflet>
+      </div>
+    </div>
+  </div>
+</ng-container>

@@ -1,0 +1,13 @@
+@use '@material/top-app-bar/mdc-top-app-bar';
+@use '@material/top-app-bar/_index.scss';
+
+.mdc-top-app-bar {
+  background-color: var(--background-tertiary);
+  color: var(--foreground-quaternary);
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+}
