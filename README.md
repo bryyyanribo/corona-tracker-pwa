@@ -1,4 +1,5 @@
 # Corona Tracker PWA
+A Simple Web App for Tracking Corona Virus Cases
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
-
+## API
+[COVID-19-API](https://github.com/Laeyoung/COVID-19-API)
